@@ -58,3 +58,11 @@ $ gcc -o <output_file> <source_files> -lcio
 ```
 
 > **_NOTE:_** Linking the library is necessary for the functions to be accessible.
+
+## Samples
+
+There are some samples in the [samples](https://github.com/SohamMalakar/cio/tree/master/samples/) folder. You can verify if the library works by compiling and running the examples.
+
+## Contribution
+
+If you have any suggestions or bug reports, please open an [issue](https://github.com/SohamMalakar/cio/issues/) or create a [pull request](https://github.com/SohamMalakar/cio/pulls/).
