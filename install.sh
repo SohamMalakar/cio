@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Create static library
 gcc -c cio.c -I .
 ar rcs libcio.a cio.o
