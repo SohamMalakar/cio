@@ -1,5 +1,5 @@
 # Create static library
-gcc -c cio.c
+gcc -c cio.c -I .
 ar rcs libcio.a cio.o
 rm cio.o
 
