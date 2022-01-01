@@ -1,4 +1,4 @@
 @echo off
-gcc -c cio.c
+gcc -c cio.c -I .
 ar rcs libcio.a cio.o
 del cio.o
