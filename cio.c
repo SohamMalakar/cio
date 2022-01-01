@@ -71,17 +71,14 @@ string input(const char *const String)
 
 char input_char(const char *const String)
 {
-    char tmp;
-    char line[2] = {'\0', '\0'};
+    string data = input(String);
 
-    if (String != NULL)
-        print("%s", String);
+    if (data == NULL)
+        return 0;
 
-    if (fgets(line, sizeof line, stdin))
-        tmp = line[0];
+    char tmp = data[0];
 
-    if (tmp == '\n')
-        tmp = '\0';
+    free(data);
 
     return tmp;
 }
