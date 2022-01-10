@@ -9,6 +9,9 @@ It's a utility tool for easy input-output operations in C Programming Language.
 
 ## Usage
 
+The utility comes with some useful functions that you can use in your programs.
+Those functions are-
+
 | Function                            | Description                                        |
 | ----------------------------------- | -------------------------------------------------- |
 | `int print(string, ...)`            | Prints the string with the given arguments.        |
