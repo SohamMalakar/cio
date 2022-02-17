@@ -12,15 +12,15 @@ It's a utility tool for easy input-output operations in C Programming Language.
 The utility comes with some useful functions that you can use in your programs.
 Those functions are-
 
-| Function                            | Description                                        |
-| ----------------------------------- | -------------------------------------------------- |
-| `int print(string, ...)`            | Prints the string with the given arguments.        |
-| `string input(string)`              | Reads a string from the standard input.            |
-| `char input_char(string)`           | Reads a character from the standard input.         |
-| `int input_int(string)`             | Reads an integer from the standard input.          |
-| `long input_long(string)`           | Reads a long integer from the standard input.      |
-| `long long input_long_long(string)` | Reads a long long integer from the standard input. |
-| `double input_double(string)`       | Reads a double from the standard input.            |
+| Function                                 | Description                                        |
+| ---------------------------------------- | -------------------------------------------------- |
+| `int print(string, ...)`                 | Prints the string with the given arguments.        |
+| `string input(string, ...)`              | Reads a string from the standard input.            |
+| `char input_char(string, ...)`           | Reads a character from the standard input.         |
+| `int input_int(string, ...)`             | Reads an integer from the standard input.          |
+| `long input_long(string, ...)`           | Reads a long integer from the standard input.      |
+| `long long input_long_long(string, ...)` | Reads a long long integer from the standard input. |
+| `double input_double(string, ...)`       | Reads a double from the standard input.            |
 
 ## Installation
 
