@@ -1,8 +1,8 @@
 #include <cio.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdarg.h>
 
 int print(const char *format, ...)
 {
@@ -13,13 +13,18 @@ int print(const char *format, ...)
     return result;
 }
 
-string input(const char *const String)
+string input(const char *const String, ...)
 {
     size_t alloc_length = 1024, data_length = 0;
     string cursor = NULL, line = NULL, data = NULL;
 
     if (String != NULL)
-        print("%s", String);
+    {
+        va_list args;
+        va_start(args, String);
+        vprintf(String, args);
+        va_end(args);
+    }
 
     data = malloc(alloc_length);
 
@@ -69,9 +74,17 @@ string input(const char *const String)
     return data;
 }
 
-char input_char(const char *const String)
+char input_char(const char *const String, ...)
 {
-    string data = input(String);
+    if (String != NULL)
+    {
+        va_list args;
+        va_start(args, String);
+        vprintf(String, args);
+        va_end(args);
+    }
+
+    string data = input(NULL);
 
     if (data == NULL)
         return 0;
@@ -83,9 +96,17 @@ char input_char(const char *const String)
     return tmp;
 }
 
-int input_int(const char *const String)
+int input_int(const char *const String, ...)
 {
-    string data = input(String);
+    if (String != NULL)
+    {
+        va_list args;
+        va_start(args, String);
+        vprintf(String, args);
+        va_end(args);
+    }
+
+    string data = input(NULL);
 
     if (data == NULL)
         return 0;
@@ -97,9 +118,17 @@ int input_int(const char *const String)
     return tmp;
 }
 
-long input_long(const char *const String)
+long input_long(const char *const String, ...)
 {
-    string data = input(String);
+    if (String != NULL)
+    {
+        va_list args;
+        va_start(args, String);
+        vprintf(String, args);
+        va_end(args);
+    }
+
+    string data = input(NULL);
 
     if (data == NULL)
         return 0;
@@ -111,9 +140,17 @@ long input_long(const char *const String)
     return tmp;
 }
 
-long long input_long_long(const char *const String)
+long long input_long_long(const char *const String, ...)
 {
-    string data = input(String);
+    if (String != NULL)
+    {
+        va_list args;
+        va_start(args, String);
+        vprintf(String, args);
+        va_end(args);
+    }
+
+    string data = input(NULL);
 
     if (data == NULL)
         return 0;
@@ -125,9 +162,17 @@ long long input_long_long(const char *const String)
     return tmp;
 }
 
-double input_double(const char *const String)
+double input_double(const char *const String, ...)
 {
-    string data = input(String);
+    if (String != NULL)
+    {
+        va_list args;
+        va_start(args, String);
+        vprintf(String, args);
+        va_end(args);
+    }
+
+    string data = input(NULL);
 
     if (data == NULL)
         return 0;
