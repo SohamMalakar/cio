@@ -1,10 +1,11 @@
-# Easy I/O Utility for C Programming Language
+# Python-like I/O Utilities for C
 
-It's a utility tool for easy input-output operations in C Programming Language.
+It's a header file containing a few functions to take inputs easily without making any buffer overflow in C.
 
 ## Features
 
-- The header file contains a few useful i/o functions.
+The header file contains:
+- A few useful i/o functions.
 - A string data type.
 
 ## Usage
