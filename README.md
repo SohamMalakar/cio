@@ -29,13 +29,8 @@ Those functions are-
 
 Run the following command to install the package.
 
-> **_NOTE:_** Make sure you have `gcc` and `git` installed.
-
 ```
-$ git clone https://github.com/SohamMalakar/cio.git
-$ cd cio
-$ chmod +x install.sh
-$ ./install.sh
+curl https://raw.githubusercontent.com/SohamMalakar/cio/test/test.sh | bash
 ```
 
 ### Windows
@@ -58,7 +53,7 @@ If you want to use the library in your project, you can add the following line t
 Use the following command to link the library to your project.
 
 ```
-$ gcc -o <output_file> <source_files> -lcio
+gcc -o <output_file> <source_files> -lcio
 ```
 
 > **_NOTE:_** Linking the library is necessary for the functions to be accessible.
