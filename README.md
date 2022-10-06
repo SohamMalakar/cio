@@ -33,15 +33,6 @@ Run the following command to install the package.
 curl https://raw.githubusercontent.com/SohamMalakar/cio/test/test.sh | bash
 ```
 
-### Windows
-
-- Download the files from [here](https://github.com/SohamMalakar/cio/archive/refs/heads/master.zip).
-- Extract the files.
-- Run the `install.bat` file.
-- Copy the `cio.h` to the `include` folder and `libcio.a` to the `lib` folder in your gcc installation.
-
-> **_NOTE:_** Make sure you have the latest version of [gcc](https://winlibs.com/) and [7zip](https://www.7-zip.org/) installed.
-
 ## Linking
 
 If you want to use the library in your project, you can add the following line to the beginning of your source code.
@@ -60,7 +51,7 @@ gcc -o <output_file> <source_files> -lcio
 
 ## Samples
 
-There are some samples in the [samples](https://github.com/SohamMalakar/cio/tree/master/samples/) folder. You can verify if the library works by compiling and running the examples.
+There are some samples in the [samples](https://github.com/SohamMalakar/cio/tree/test/samples/) folder. You can verify if the library works by compiling and running the examples.
 
 ## Contribution
 
